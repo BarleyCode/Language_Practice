@@ -1,0 +1,4 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Embarcadero\BDS\20.0\Editor]
+"DefaultFileFilter"="Borland.FileFilter.UTF8ToUTF8"
