@@ -1,5 +1,27 @@
 # Java 팁
 
+## Java 공통
+- annotation 꿀팁
+    - 주요 어노테이션은 클래스에 가깝게 둔다 (꼭 필요한 어노테이션일수록 클래스 선언문 가까이에 둔다)
+    - 예 : Lombok 어노테이션은 필수는 아니라서 위쪽에 둔다 → 나중에 필요 없을 떄 쉽게 삭제 가능
+    
+- Builder 패턴을 적극적으로 활용하기
+    - Setter가 없어도 Builder를 통해 값을 채울 수 있다(DB에도 삽입 가능)
+    - 예 1 : 잘못된 예. 만약 잘못해서 a,b 순서가 바뀐다면 유지보수 시 큰일이다.
+        ```java
+        public Example(String a, String b) {
+            this.a = a;
+            this.b = b;
+        }
+        ```
+    - 예 2 : 올바른 예. 다음과 같이 어느 필드에 어떤 값을 채워야할 지 명확하게 인지 가능
+        ```java
+        Example.builder()
+            .a(a)
+            .b(b)
+            .build();
+        ```
+
 ## JetBrains IntelliJ IDEA
 ### Gradle
 - Gradle 오류 Could not find methond Compile()
