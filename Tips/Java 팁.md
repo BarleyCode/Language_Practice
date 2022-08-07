@@ -71,7 +71,8 @@
 - import 입력 시 사라지는 현상 해결
     - https://stackoverflow.com/questions/62361168/cant-add-import-into-java-class-in-intellij
     - Settings -> Editor -> General -> Auto Import -> Optimize imports on the fly 체크박스 해제
-
+- 인코딩 설정
+    - 
     
 ### 오류
 - Unsupported class file major version 62
