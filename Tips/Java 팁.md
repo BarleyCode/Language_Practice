@@ -60,6 +60,8 @@
 ### 기타 설정
 - 언어 설정
     - 오른쪽 톱니바퀴 메뉴 > Plugins > Korean 검색해 Korean Language Pack 제거 시 기본값인 영어로 변경
+- 인코딩 설정
+    - File > Settings > Editor > File Encoding에서 모두 UTF-8로 변경해주기 (https://stackoverflow.com/questions/69794174/unsupported-characters-for-the-charset-iso-8859-1-in-spring-res-file)
 - JAVA_HOME 오류
     - Windows : 시스템 환경 변수 설정을 되도록이면 `D:\Tools\JetBrains\IntelliJ_IDEA\jbr\bin` 여기 경로로 설정하기
 - 코드 변경에 따른 자동 import 옵션 켜기
@@ -71,8 +73,7 @@
 - import 입력 시 사라지는 현상 해결
     - https://stackoverflow.com/questions/62361168/cant-add-import-into-java-class-in-intellij
     - Settings -> Editor -> General -> Auto Import -> Optimize imports on the fly 체크박스 해제
-- 인코딩 설정
-    - 
+
     
 ### 오류
 - Unsupported class file major version 62
