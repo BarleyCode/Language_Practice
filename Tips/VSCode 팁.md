@@ -1,4 +1,4 @@
-# Markdown 팁
+# Visual Studio Code 팁
 
 - 탭 설정
     - File > Settings > Indentation 검색 후 Editor:Tab Size = 4로 변경
