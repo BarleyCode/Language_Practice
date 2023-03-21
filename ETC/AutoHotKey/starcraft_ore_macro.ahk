@@ -3,12 +3,12 @@
 ; 키 목록 : https://tricks-office.com/autohotkey/
 
 
-F3::
+F6::
 Loop
 {
 send, {Enter}
 Sleep, 15
-send, whats mine is mine
+send, show me the money
 Sleep, 15
 send, {Enter}
 }
@@ -16,5 +16,5 @@ return
 
 
 
-F4::Pause
-F6::ExitApp
+F7::Pause
+F8::ExitApp
