@@ -38,4 +38,3 @@ REM Copying 1 file : https://serverfault.com/questions/52983
 robocopy /is . "%ProgramFiles%\Typora\resources\style\themes" night.css
 robocopy /is . "C:\Users\%username%\AppData\Roaming\Typora\themes" night.css
 robocopy /is . "C:\Users\%username%\AppData\Roaming\Typora\themes\old-themes" night.css
-
