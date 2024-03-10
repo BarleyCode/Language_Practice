@@ -22,6 +22,12 @@
             .build();
         ```
 
+- PDFBox
+	- apache 재단 PDF 관련 오픈 소스
+	- PDF → 이미지 변환 : PDFToImage
+		- vo.la/1U4v60 (stackoverflow)
+		- vo.la/Qf3DyW (tutorialspoint)
+
 ## JetBrains IntelliJ IDEA
 ### Gradle
 - Gradle 오류 Could not find methond Compile()
@@ -84,3 +90,65 @@
         - 설정 > Build, Execution, Deployment > Build Tools > Gradle
         - Gradle JVM > Download JDK... > 1.8버전 아무거나 찾아서 다운로드 (회사는 상관 없음)
     - build.gradle 파일 들어가서 책과 다른 내용은 전부 삭제. 책과 __똑같이__ 만들기
+
+
+
+## 이클립스
+### 이클립스 기본
+- 글꼴 변경
+	- vo.la/ODersS
+	- 상단 메뉴에서 Windows > Preference > General > Appearance > Colors and Fonts
+	- 변경
+        ~~- Java > Java Editor Text Font~~
+        - Basic > Text Font
+	
+- 폴더/프로젝트 불러오기
+	- emflant.tistory.com/88 (아카이브: archive.is/Esvqh)
+	- 자신이 만든 워크스페이스 폴더 안에 해당 폴더 복붙
+	- File > Import > General > Existing Projects into Workspace
+	- Select root directory > Browse > 폴더 선택 > Finish
+	
+- 파일 찾기
+    - Eclipse Juno (egov 2.7.1) : Ctrl+Shift+R
+
+- xml 파일은 xml editor에서 열도록 설정
+    - dorongdogfoot.tistory.com/118
+    - Window > Preference > General > Editors > File Associations
+    - *.xml 선택 (없으면 Add 눌러 추가)
+    - 'XML Editor' 선택 후 Default 버튼 클릭
+
+- Maven 세팅
+    - Windows > Preference > Maven > User Settings에서 경로 설정하기
+
+- 프로젝트 내 파일 찾기, 파일 검색
+  - Ctrl+Shift+R 또는 Ctrl+Shift+T 사용
+
+	
+### 전자정부프레임워크
+- SVN 연동하기
+	- goldsony.tistory.com/21
+- Tomcat 톰캣 서버 여러 개 추가
+    - ontheinfo.com/3516 (archive.is/psGvZ)
+    - File > New > Other > Server
+    - 이름, tomcat 설치 디렉터리, JRE 설정 후 Finish
+- Tomcat 톰캣 서버 설정
+    - vo.la/KzaduO (archive.is/nvQie)
+    - 여러 개의 서버를 따로 설정
+        - 아래 Servers에서 서버 선택 후 더블클릭
+        - Tomcat admin port, HTTP/1.1(실제 웹사이트) 포트 설정
+        - __주의__ 기존 서버의 포트들과 겹치지 않기
+    - 하나의 서버에 여러 모듈 올리기
+        - 홈페이지 참조
+- Tomcat 톰캣 서버로 구동
+    - detail-from-a-to-z.tistory.com/11
+    - 레포지토리 우클릭 > Run As > Run on Server > 원하는 서버 선택
+- Tomcat 톰캣 에러 페이지에서 서버 정보 제거: serverstudy.tistory.com/175
+- Tomcat 톰캣 HTTP 헤더에서 서버 정보 제거: serverstudy.tistory.com/176
+- jar 압축: forgiveall.tistory.com/324
+- egov 4.0
+    - 베타 후기
+        - okky.kr/articles/1117322
+        - ifmkl.tistory.com/423
+    - React 샘플 페이지 띄우기
+        - mitw.tistory.com/41
+
