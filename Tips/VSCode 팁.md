@@ -14,3 +14,17 @@
     - https://stackoverflow.com/questions/43305050
     - 설정 > `terminal.integrated.cwd` 검색
     - 빈 칸에 `${fileDirname}` 입력
+  
+- 터미널에 한글 깨지지 않게 출력하기
+    - https://reo91004.tistory.com/126
+    - Code-Runner 확장 설치
+    - 설정 > `code-runner.ExecutorMap` 검색
+    - 원하는 언어 앞에 `chcp 65001 &&` 붙이기
+    - Python의 경우 시스템 환경 변수 편집에 아래와 같이 추가
+        - 참고: https://reo91004.tistory.com/2
+        - 변수 이름: PYTHONIOENCODING
+        - 변수 값: utf-8
+
+- git 콘솔에서 한글 깨지지 않게 출력하기
+    - https://velog.io/@im-yeobi/git-%ED%95%9C%EA%B8%80-%ED%8C%8C%EC%9D%BC%EB%AA%85-%EA%B9%A8%EC%A7%90-%ED%95%B4%EA%B2%B0
+    - `git config core.quotepath false` 입력
