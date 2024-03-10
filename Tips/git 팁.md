@@ -6,7 +6,10 @@
     - `git status`: 상태 확인
     - `git add .`: 파일 추가 희망 시 사용. `.`은 현재 디렉터리의 모든 파일을 add한다는 뜻
     - `git commit -m "코멘트"`: 커밋 단계. 반드시 add 이후에 실시. 코멘트 입력 시 `-m` 활용
-    - `git push -u origin main` : 푸쉬 단계. 반드시 commit 이후에 실시. main 브랜치로 push할 것
+    - `git push origin main` : 푸쉬 단계. 반드시 commit 이후에 실시. main 브랜치로 push할 것
+        - `-u`: 이 파라미터를 추가할 시 자동으로 해당 브랜치에 push, pull 등 실시
+        - 예: `git push -u origin main` > 다음부터 `git push`만 입력해도 자동으로 main으로 push
+    - `git pull origin main` : 풀 단계. 데이터 갱신
 
 - 로컬 저장소 변경
     - 레포지토리 내 .git 폴더를 옮기면 된다 (https://sedangdang.tistory.com/147)
