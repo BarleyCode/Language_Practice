@@ -1,5 +1,13 @@
 # git 팁
 
+- git으로 올려보기(add, commit, push까지)
+    - https://velog.io/@suasue/Git-Git-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85-%EB%B0%8F-add-commit-push-%ED%95%B4%EB%B3%B4%EA%B8%B0
+    - `git remote -v` : remote repository와 연결 확인
+    - `git status`: 상태 확인
+    - `git add .`: 파일 추가 희망 시 사용. `.`은 현재 디렉터리의 모든 파일을 add한다는 뜻
+    - `git commit -m "코멘트"`: 커밋 단계. 반드시 add 이후에 실시. 코멘트 입력 시 `-m` 활용
+    - `git push -u origin main` : 푸쉬 단계. 반드시 commit 이후에 실시. main 브랜치로 push할 것
+
 - 로컬 저장소 변경
     - 레포지토리 내 .git 폴더를 옮기면 된다 (https://sedangdang.tistory.com/147)
         - 아카이브 : https://archive.ph/n1LJd
