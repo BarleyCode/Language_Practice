@@ -1,2 +1,2 @@
 # Language_Practice
-Let's practive various languages.
+Let's practice various languages.
